@@ -397,4 +397,5 @@ s .skills-text {
 .portfolio-card-text {
   padding: 32px 16px;
   border: 1px solid var(--Accent-color);
+  border-top: none;
 }
