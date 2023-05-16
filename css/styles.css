@@ -366,10 +366,7 @@ s .skills-text {
   margin-bottom: 72px;
 }
 /* ------products------ */
-.product-wrap {
-  padding: 32px 16px;
-  border: 1px solid var(--Accent-color);
-}
+
 .portfolio-list-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -388,8 +385,6 @@ s .skills-text {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
-}
-.product-titel {
   margin-bottom: 8px;
 }
 .product-text {
@@ -400,6 +395,6 @@ s .skills-text {
   color: var(--text-color);
 }
 .portfolio-card-text {
-  padding-top: 32px;
-  padding-bottom: 28px;
+  padding: 32px 16px;
+  border: 1px solid var(--Accent-color);
 }
