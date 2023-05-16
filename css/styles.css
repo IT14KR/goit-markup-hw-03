@@ -6,6 +6,11 @@
   --primary-brand-color: #4d5ae5;
   --pressed-state-color: #404bbf;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 h1,
 h2,
@@ -44,14 +49,15 @@ body {
 }
 
 .container {
-  width: 1160px;
+  width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 /* ------------Header----------- */
 .header {
-  padding: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 .page-header-container {
   display: flex;
@@ -129,8 +135,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 182px;
-  padding-bottom: 268px;
+  padding: 188px 0;
 }
 .hero-wrap {
   display: inline-block;
@@ -143,7 +148,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
-  max-width: 500px;
+  max-width: 496px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -166,6 +171,10 @@ body {
   padding-right: 32px;
   padding-bottom: 16px;
   padding-left: 32px;
+  max-width: 496px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 .btn-order:hover,
 .btn-order:focus {
@@ -177,13 +186,12 @@ body {
   visibility: none;
 }
 .skills-wrap {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding: 120px 0;
 }
 .skills-item {
 }
 .skills-item-list {
-  display: inline-flex;
+  display: flex;
   gap: 24px;
 }
 .skills-titel {
@@ -207,9 +215,9 @@ body {
 }
 .examples-item {
   display: flex;
+  gap: 24px;
 }
 .examples-item-list {
-  margin: 24px;
 }
 .img-examples {
   width: 100%;
@@ -247,9 +255,13 @@ body {
 
 .employees-item {
   display: flex;
+  gap: 24px;
 }
 .employees-item-list {
   background: var(--white-color);
+}
+.card-text {
+  padding: 32px 16px;
 }
 .img-employees {
   width: 100%;
@@ -261,6 +273,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 .employees-text {
   font-weight: 400;
@@ -313,11 +326,13 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-color);
+  max-width: 264px;
 }
 .content-footer {
 }
 /* ----------------Portfolio------ */
 .section-exems {
+  margin-bottom: 120px;
 }
 
 .hidden {
@@ -344,13 +359,22 @@ body {
   background-color: var(--pressed-state-color);
 }
 .button-item {
-  display: inline-block;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
 }
 /* ------products------ */
 .portfolio-list-wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 24px;
+}
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
+}
+.portfolio-list-link {
+  display: block;
 }
 .secondary-titel {
   font-weight: 500;
@@ -365,4 +389,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+}
+.portfolio-card-text {
+  padding-top: 32px;
+  padding-bottom: 28px;
 }
