@@ -71,7 +71,6 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding: 24px 0;
 }
 .header-link {
   font-weight: 500;
@@ -79,6 +78,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  padding: 24px 0;
 }
 
 .header-link:hover,
@@ -190,8 +190,7 @@ body {
 .hidden {
   visibility: none;
 }
-.skills-wrap {
-}
+
 .skills-item {
   width: calc((100% - 72px) / 4);
 }
@@ -205,10 +204,9 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
-}
-.skills-titel-wrap {
   margin-bottom: 8px;
 }
+
 s .skills-text {
   font-weight: 400;
   font-size: 16px;
@@ -225,7 +223,6 @@ s .skills-text {
   gap: 24px;
 }
 .examples-item-list {
-  display: flex;
 }
 .img-examples {
   width: 100%;
@@ -239,9 +236,6 @@ s .skills-text {
   text-transform: capitalize;
   color: var(--dark-color);
   margin-bottom: 72px;
-}
-.examples-item {
-  display: inline-flex;
 }
 
 /* ---------Employees----- */
@@ -298,10 +292,7 @@ s .skills-text {
   min-height: 312px;
   padding: 100px 0;
 }
-.footer-wrap {
-  display: inline-block;
-  align-items: center;
-}
+
 .logo-footer {
   color: var(--primary-brand-color);
   text-decoration: none;
@@ -313,6 +304,7 @@ s .skills-text {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .span-footer {
